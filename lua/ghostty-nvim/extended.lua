@@ -4,6 +4,7 @@ local M = {}
 local function setup_highlights(theme)
     local highlights = {
         ["@function"] = { fg = theme.palette[2] },
+        ["@function.call"] = { fg = theme.palette[7] },
         ["@operator"] = { fg = theme.palette[5] },
         ["@variable"] = { fg = theme.palette[7] },
         ["@punctuation"] = { fg = theme.palette[7] },
