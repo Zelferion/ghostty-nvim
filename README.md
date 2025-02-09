@@ -38,7 +38,7 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
         require("ghostty-nvim").setup({
             enabled = true,
             treesitter = true,
-            reload_keymap = "<leader>tr" -- set to false to disable
+            reload_keymap = "<leader>tr"
         })
     end,
 }
