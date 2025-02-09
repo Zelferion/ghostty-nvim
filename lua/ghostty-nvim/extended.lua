@@ -16,7 +16,7 @@ local function setup_highlights(theme)
 end
 
 function M.setup(opts)
-    local utils = require("ghosttyTheme.utils")
+    local utils = require("ghostty-nvim.utils")
     local theme = utils.construct_theme_object()
 
     setup_highlights(theme)

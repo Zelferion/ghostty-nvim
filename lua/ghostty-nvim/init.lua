@@ -8,12 +8,12 @@ function M.setup(opts)
     }
 
     if opts.enabled then
-        local core = require("ghosttyTheme.core")
+        local core = require("ghostty-nvim.core")
         core.setup(opts)
 
         local has_ts = pcall(require, "nvim-treesitter")
         if has_ts then
-            local extended = require("ghosttyTheme.extended")
+            local extended = require("ghostty-nvim.extended")
             extended.setup(opts)
         else
             if opts.treesitter then
