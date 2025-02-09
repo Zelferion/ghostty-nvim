@@ -5,7 +5,7 @@ local function setup_highlights(theme)
     local highlights = {
         ["@function"] = { fg = theme.palette[2] },
         ["@operator"] = { fg = theme.palette[5] },
-        ["@variable"] = { fg = theme.palette[15] },
+        ["@variable"] = { fg = theme.palette[7] },
         ["@punctuation"] = { fg = theme.palette[7] },
         ["@string.escape"] = { fg = theme.palette[12] },
         ["@keyword"] = { fg = theme.palette[5] },

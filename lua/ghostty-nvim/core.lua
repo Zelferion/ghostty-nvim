@@ -10,7 +10,7 @@ local function setup_highlights(theme)
         Number         = { fg = theme.palette[4] },
         Boolean        = { fg = theme.palette[4] },
         Float          = { fg = theme.palette[4] },
-        Identifier     = { fg = theme.palette[15] },
+        Identifier     = { fg = theme.palette[7] },
         Function       = { fg = theme.palette[2] },
         Statement      = { fg = theme.palette[5] },
         Conditional    = { fg = theme.palette[3] },
