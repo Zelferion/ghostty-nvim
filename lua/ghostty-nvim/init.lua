@@ -1,12 +1,11 @@
--- init.lua
+
 local M = {}
 
-function M.setup(opts)
-    opts = opts or {
-        enabled = true,
-        treesitter = true,
-    }
 
+local current_opts = nil
+
+
+local function apply_theme(opts)
     if opts.enabled then
         local core = require("ghostty-nvim.core")
         core.setup(opts)
@@ -20,6 +19,38 @@ function M.setup(opts)
                 vim.notify("Treesitter not found. Some highlighting features disabled.", vim.log.levels.WARN)
             end
         end
+    end
+end
+
+
+function M.reload()
+    if current_opts then
+        vim.notify("Reloading Ghostty theme...", vim.log.levels.INFO)
+        apply_theme(current_opts)
+        vim.notify("Ghostty theme reloaded!", vim.log.levels.INFO)
+    else
+        vim.notify("Theme not initialized. Call setup() first.", vim.log.levels.ERROR)
+    end
+end
+
+function M.setup(opts)
+    opts = opts or {
+        enabled = true,
+        treesitter = true,
+    }
+    
+    
+    current_opts = opts
+    
+    apply_theme(opts)
+
+    
+    if opts.reload_keymap ~= false then  
+        local keymap = opts.reload_keymap or "<leader>tr"  
+        vim.keymap.set('n', keymap, M.reload, { 
+            desc = "Reload Ghostty theme", 
+            silent = true 
+        })
     end
 end
 
