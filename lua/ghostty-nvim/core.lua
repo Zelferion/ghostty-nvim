@@ -28,7 +28,7 @@ local function setup_highlights(theme)
         StorageClass   = { fg = theme.palette[12] },
         Structure      = { fg = theme.palette[12] },
         Typedef        = { fg = theme.palette[12] },
-        Special        = { fg = theme.palette[3] },
+        Special        = { fg = theme.palette[12] },
         SpecialChar    = { fg = theme.palette[10] },
         Tag           = { fg = theme.palette[4] },
         Delimiter      = { fg = theme.palette[6] },

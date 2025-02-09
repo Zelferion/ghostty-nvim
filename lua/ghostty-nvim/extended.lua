@@ -6,6 +6,7 @@ local function setup_highlights(theme)
         ["@function"] = { fg = theme.palette[2] },
         ["@variable"] = { fg = theme.palette[15] },
         ["@keyword"] = { fg = theme.palette[5] },
+        ["@keyword.function"] = { fg = theme.palette[12] },
         ["@string"] = { fg = theme.palette[10] },
         ["@comment"] = { fg = theme.palette[15], italic = true },
     }
