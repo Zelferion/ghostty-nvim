@@ -5,6 +5,7 @@ local function setup_highlights(theme)
     local highlights = {
         ["@function"] = { fg = theme.palette[2] },
         ["@function.call"] = { fg = theme.foreground },
+        ["@namespace"] = { fg = theme.foreground },
         ["@operator"] = { fg = theme.palette[5] },
         ["@variable"] = { fg = theme.foreground },
         ["@variable.global"] = { fg = theme.foreground },
