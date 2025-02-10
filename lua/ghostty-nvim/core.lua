@@ -10,7 +10,7 @@ local function setup_highlights(theme)
         Number         = { fg = theme.palette[4] },
         Boolean        = { fg = theme.palette[4] },
         Float          = { fg = theme.palette[4] },
-        Identifier     = { fg = theme.palette[7] },
+        Identifier     = { fg = theme.foreground },
         Function       = { fg = theme.palette[2] },
         Statement      = { fg = theme.palette[5] },
         Conditional    = { fg = theme.palette[3] },
@@ -35,7 +35,7 @@ local function setup_highlights(theme)
         SpecialComment = { fg = theme.palette[8] },
         Debug          = { fg = theme.palette[9] },
         Underlined     = { fg = theme.palette[12], underline = true },
-        Ignore         = { fg = theme.palette[7] },
+        Ignore         = { fg = theme.foreground },
         Error          = { fg = theme.palette[9] },
         Todo           = { fg = theme.palette[11] },
     }

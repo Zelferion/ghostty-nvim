@@ -4,10 +4,11 @@ local M = {}
 local function setup_highlights(theme)
     local highlights = {
         ["@function"] = { fg = theme.palette[2] },
-        ["@function.call"] = { fg = theme.palette[7] },
+        ["@function.call"] = { fg = theme.foreground },
         ["@operator"] = { fg = theme.palette[5] },
-        ["@variable"] = { fg = theme.palette[7] },
-        ["@punctuation"] = { fg = theme.palette[7] },
+        ["@variable"] = { fg = theme.foreground },
+        ["@variable.global"] = { fg = theme.foreground },
+        ["@punctuation"] = { fg = theme.foreground },
         ["@string.escape"] = { fg = theme.palette[12] },
         ["@keyword"] = { fg = theme.palette[5] },
         ["@keyword.function"] = { fg = theme.palette[12] },
